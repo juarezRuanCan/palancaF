@@ -1,0 +1,116 @@
+body{
+    padding: 0;
+    margin: 0;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    font-family: consolas;
+    background-color:#FDFEFE;
+}
+#foco.active{
+    background: #FF2629;
+    box-shadow: 0 0 20px #FF2629
+}
+#focMin.active{
+    background: #C90709;
+}
+#foco{
+    transition: 100ms;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    position: absolute;
+    background: white;
+    border: black 1px solid;
+    width: 7vh;
+    height: 7vh;
+
+    left: calc(98.5vw - 7vh);
+}
+
+#butR{
+    position: absolute;
+    background: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 7vw;
+    height: 7vw;
+    border-radius: 50%;
+    border: black solid 1px;
+}
+#est{
+    position: absolute;
+    top: 50vh
+}
+#pot{
+    position: absolute;
+    top: 60vh
+}
+#butR p{
+    font-size: 1rem;
+    pointer-events: none;
+}
+
+#focMin{
+    transition: 100ms;
+    border-radius: 50%;
+    position: absolute;
+    background: #F2F3F4;
+    border: black 1px solid;
+    width: 4vh;
+    height: 4vh;
+}
+
+#eje1,#eje2,#eje3{
+    padding: 3px;
+}
+
+#area1, #area2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    border-radius: 50%;
+    width: 25vw;
+    height: 25vw;
+    background: #8BFBA3;
+}
+
+#joystick1{
+    position: absolute;
+    /* border-radius: 50%; */
+    border-radius:50% 50% 0% 0%;
+    width: 18vw;
+    height: 6vw;
+    pointer-events: none;
+    background: #3486A4;
+}
+#joystick2{
+    position: absolute;
+    /* border-radius: 50%; */
+    border-radius:50% 0% 0% 50%;
+    width: 6vw;
+    height: 18vw;
+    pointer-events: none;
+    background: #3486A4;
+}
+
+#tray1{
+    height: 2vw;
+    width: 23vw;
+    border-radius: 40px;
+    position: absolute;
+    background: black;
+    opacity: 0.1;
+    pointer-events: none;
+}
+#tray2{
+    height: 23vw;
+    width: 2vw;
+    border-radius: 40px;
+    position: absolute;
+    background: black;
+    opacity: 0.1;
+    pointer-events: none;
+}
